@@ -3,6 +3,9 @@
 - [사이트](#사이트)
 - [VS CODE & NPM](#vs-code&npm)
 - [Git 명령어](#git)
+  - [github 연결](#github-연결하기)
+  - [github 브런치](#git-branch)
+  - [git 프로젝트복제](#git-프로젝트-복제)
 - [HTML 특수문자](#html-특수문자)
 - [마크다운 문법](#마크다운)
   - [마크다운 제목](#마크다운-제목)
@@ -17,7 +20,7 @@
 <br>
 <hr>
 
-## #사이트
+## <span style="color:green;font-weight:bold">#사이트</span>
 
 - [눈누](https://noonnu.cc/index)
 - [color hunt](https://colorhunt.co/)
@@ -25,7 +28,6 @@
 - [simple icons\_브랜드로고](https://simpleicons.org/?q=boot)
 - [url-encoder_svg 변환](https://yoksel.github.io/url-encoder/)
 - [material-icons](https://mui.com/material-ui/material-icons/)
-- []()
 - fontawesome 5 cdn :
 
 ```html
@@ -39,16 +41,139 @@
 - []()
 <br>
 <hr>
+<hr>
 
-## #Git
+## <span style="color:green;font-weight:bold">#Git</span>
 
-- [눈누](https://noonnu.cc/index)
-- []()
+### $ git 정보 등록(git git hub 아이디, 이메일과 같게 설정)
+
+```bash
+$git config --global user.name 'Your_Name'
+$git config --global user.name 'Your_Email'
+```
+
+### $ 구성확인 (list)
+
+```bash
+$git config --global --list
+```
+
+### $ 버전 확인
+
+입력 시 파일이 빨간색/초록색으로 나타남
+
+```bash
+$git status
+```
+
+### #Github 연결하기
+
+```bash
+/ 현재 프로젝트에서 변경사항 추적(버전관리)를 시작 /
+$git init
+
+/ Github 연결 /
+$git remote add origin + github 주소
+```
+
+### $ git commit 하기
+
+```bash
+1. 변경내용 추적
+$git add .
+
+2. 버전 생성
+$git commit -m '프로젝트 생성'
+
+3. 업로드
+$git push origin 'branch이름'
+
+Eg.
+$ git push origin master
+```
+
+### $ 연결내용 확인
+
+```bash
+$git log
+```
+
+### $ 변경사항을 추적할 특정 파일을 지정
+
+```bash
+$git add index.html
+```
+
+## #git branch
+
+### $ 현재 branch 목록 확인
+
+```bash
+$git branch
+```
+
+### $ 새로운 branch 생성
+
+```bash
+$git branch "Name"
+```
+
+### $ 해당 branch로 이동
+
+```bash
+$git checkout "Name"
+```
+
+### $ 해당 branch 가져오기/서버에서 vs code로
+
+```bash
+$git checkout -t "Name"
+```
+
+### $ 해당 branch 삭제
+
+```bash
+$git branch -d "Name"
+```
+
+### $ 새로운 branch 생성 및 해당 branch로 이동
+
+```bash
+$git branch checkout -b "Name"
+```
+
+## #git 프로젝트 복제
+
+> VS Code에서 복제하는 방법
+
+```
+1. git hub 로그인
+2. 레퍼지토리 code에서 주소 복사하기
+3. vs code에서 터미널 오픈
+4. 현재 경로 확인하기
+5. dir 입력 (맥 -ls) : 현재 경로에 있는 폴더 확인
+6. cd desk tab키 누르면 cd .＼Desktop＼ 입력
+   -> 엔터 하면 경로 변경됨
+  //cd .. (밖에 폴더로 이동)
+7. git clone 깃 주소
+8. dir 입력 시 폴더 생성된 것을 확인할 수 있음
+```
+
+> github에서 알집파일로 다운받기
+
+```
+1. 레퍼지토리 들어가기
+2. code버튼 누르기
+3. Download ZIP 눌러서 프로젝트 다운받기
+```
+
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpENvf%2FbtrMjcU6elS%2FHtS7uolK46lGBrlT0eeb9k%2Fimg.jpg)
 
 <br>
 <hr>
+<hr>
 
-## #VS CODE & NPM
+## <span style="color:green;font-weight:bold">#VS CODE & NPM</span>
 
 ### 1.확장자 설치
 
@@ -82,8 +207,9 @@ shift + tab : 내어쓰기
 
 <br>
 <hr>
+<hr>
 
-## #HTML 특수문자
+## <span style="color:green;font-weight:bold">#HTML 특수문자</span>
 
 & 붙여서 사용
 
@@ -101,7 +227,7 @@ shift + tab : 내어쓰기
 <br>
 <hr>
 
-## #마크다운
+## <span style="color:green;font-weight:bold">#마크다운</span>
 
 <br>
 
